@@ -1,0 +1,283 @@
+/* ===== Overall Layout ===== */
+.home-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: #f8faff;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.home-content {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ===== Course List Section ===== */
+.course-list-section {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.course-list-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #FFD700;
+}
+
+.star.half-filled {
+  background: linear-gradient(90deg, #FFD700 50%, #ddd 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rating-number {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.review-count {
+  font-size: 13px;
+  color: #666;
+  margin-top: 3px;
+}
+
+/* View Button */
+.view-details-btn {
+  background: linear-gradient(135deg, #6a5af9, #4f46e5);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+}
+
+/* ===== Course Details Section ===== */
+.course-details-section {
+  flex: 2;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.no-course-selected {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+
+.analytics-section h3,
+.recent-comments-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Overall Rating Display */
+.overall-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.big-star {
+  font-size: 28px;
+  color: #FFD700;
+}
+
+.rating-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+}
+
+.total-reviews {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Pie Chart Section */
+.pie-chart-section {
+  margin: 20px 0;
+}
+
+.pie-chart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pie-chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+/* Rating Distribution */
+.distribution-bars {
+  margin-top: 15px;
+}
+
+.distribution-bar {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.bar-label {
+  width: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.bar-container {
+  flex: 1;
+  height: 10px;
+  background: #eee;
+  border-radius: 6px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(135deg, #4f46e5, #6a5af9);
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.bar-count {
+  font-size: 13px;
+  color: #444;
+}
+
+/* Recent Comments */
+.recent-comments-section {
+  margin-top: 30px;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comments-list li {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.comments-list li:hover {
+  transform: translateX(4px);
+  background: #f3f4f6;
+}
+
+.no-comments {
+  color: #777;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
