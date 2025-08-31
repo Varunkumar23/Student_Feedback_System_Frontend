@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Home.css'
 
 // ✅ Use hosted backend API
-const API_BASE = 'https://infinitelocus-backend-5r1w.onrender.com/api'
+const API_BASE = 'https://student-feedback-system-backend-dr6i.onrender.com/api'
 
 const Home = ({ onFeedbackClick }) => {
   const [courses, setCourses] = useState([])

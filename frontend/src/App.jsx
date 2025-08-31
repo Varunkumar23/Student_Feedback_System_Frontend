@@ -19,7 +19,7 @@ function App() {
 
   const handleFeedbackSubmit = async (feedbackData) => {
     try {
-      const response = await fetch('https://infinitelocus-backend-5r1w.onrender.com/api/feedback', {
+      const response = await fetch('https://student-feedback-system-backend-dr6i.onrender.com/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
