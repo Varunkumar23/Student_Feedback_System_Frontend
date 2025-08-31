@@ -30,10 +30,10 @@ The system aggregates this data to display **average ratings** and **rating dist
 ## 🌐 Hosted Links
 
 * **Backend (Express + MongoDB Atlas):**
-  👉 https://infinitelocus-backend-5r1w.onrender.com
-
+  👉[ https://infinitelocus-backend-5r1w.onrender.com
+](https://student-feedback-system-backend-dr6i.onrender.com)
 * **Frontend (React + Vercel):**
-  👉 https://infinite-locus-group5.vercel.app/
+  👉 [https://infinite-locus-group5.vercel.app/](https://student-feedback-system-frontend-gamma.vercel.app/)
 
 ---
 
